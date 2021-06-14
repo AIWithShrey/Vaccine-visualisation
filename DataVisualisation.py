@@ -6,5 +6,5 @@ vacc = pd.read_csv('Path of the downloaded vaccination csv file to be inserted h
 gropvacc = vacc.groupby(["COUNTRY"])[["TOTAL_VACCINATIONS"]].mean().reset_index()
 fig = px.bar(gropvacc[["COUNTRY", "TOTAL_VACCINATIONS"]].sort_values('TOTAL_VACCINATIONS', ascending=False),
                         y="TOTAL_VACCINATIONS", x="COUNTRY", color="COUNTRY",
-                        log_y=False, template='ggplot2')
+                        log_y=True, template='ggplot2')
 fig.show()
