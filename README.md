@@ -1,0 +1,2 @@
+# Vaccine-visualisation
+This code enables you to visualise the dataset of the total vaccinations taken in each country. The CSV file was downloaded from the official WHO website, however the data is not real-time. You must download the csv file again and paste its path under the '.read_csv()' function to visualise the latest data. I used bar graph to visualise the data for easy reference and viewing accessbility.
